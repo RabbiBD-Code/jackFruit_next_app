@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Accessories",
+    "slug": "accessories",
+    "description": "Summer essentials like sunglasses, hats, and more.",
+    "image": "https://i.postimg.cc/5yY0dG5x/accessories.png"
+  },
+  {
+    "id": 2,
+    "name": "Clothing",
+    "slug": "clothing",
+    "description": "Lightweight and breathable summer outfits.",
+    "image": "https://i.postimg.cc/QxjK6m9z/clothing.png"
+  },
+  {
+    "id": 3,
+    "name": "Skincare",
+    "slug": "skincare",
+    "description": "Protect and hydrate your skin during hot weather.",
+    "image": "https://i.postimg.cc/7h7vKp7m/skincare.png"
+  }
+]

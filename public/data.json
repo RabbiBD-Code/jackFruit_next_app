@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for summer outings.",
+    "image": "https://i.postimg.cc/8k0n8J7R/sunglasses.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Beach Straw Hat",
+    "brand": "SunnyWear",
+    "price": 12,
+    "rating": 4.5,
+    "stock": 15,
+    "description": "Lightweight straw hat to keep you cool and protected from the sun.",
+    "image": "https://i.postimg.cc/3x3QzSGq/hat.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 3,
+    "name": "Men's Summer T-Shirt",
+    "brand": "CoolFit",
+    "price": 18,
+    "rating": 4.6,
+    "stock": 20,
+    "description": "Breathable cotton t-shirt designed for hot weather comfort.",
+    "image": "https://i.postimg.cc/Z5p9Zp3S/tshirt.png",
+    "category": "Clothing"
+  },
+  {
+    "id": 4,
+    "name": "Women's Floral Dress",
+    "brand": "BloomStyle",
+    "price": 25,
+    "rating": 4.8,
+    "stock": 8,
+    "description": "Elegant floral dress perfect for summer days and vacations.",
+    "image": "https://i.postimg.cc/FzvL0x3b/dress.png",
+    "category": "Clothing"
+  },
+  {
+    "id": 5,
+    "name": "Hydrating Face Mist",
+    "brand": "FreshGlow",
+    "price": 10,
+    "rating": 4.4,
+    "stock": 25,
+    "description": "Refreshing face mist to keep your skin hydrated in the heat.",
+    "image": "https://i.postimg.cc/qvXkGQhG/facemist.png",
+    "category": "Skincare"
+  },
+  {
+    "id": 6,
+    "name": "SPF 50 Sunscreen Lotion",
+    "brand": "SunCare",
+    "price": 14,
+    "rating": 4.9,
+    "stock": 18,
+    "description": "High protection sunscreen to guard against harmful UV rays.",
+    "image": "https://i.postimg.cc/Y0y5c2vF/sunscreen.png",
+    "category": "Skincare"
+  }
+]
