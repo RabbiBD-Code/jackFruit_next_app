@@ -12,6 +12,7 @@ const Navbar = () => {
 
   const handleSignOut = async() =>{
     await authClient.signOut()
+    
   }
 
     return (
