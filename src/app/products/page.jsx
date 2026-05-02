@@ -6,7 +6,7 @@ const ProductsPage = async () => {
     const card = await res.json()
     return (
         <div className="mt-12 mx-auto">
-            <h2 className="text-2xl font-bold mb-6">Popular Products</h2>
+            <h2 className="text-2xl font-bold mb-6">Products</h2>
 
             <div className="grid md:grid-cols-3 gap-6 ">
                 {
