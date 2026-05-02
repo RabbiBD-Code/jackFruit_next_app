@@ -7,7 +7,7 @@
     "rating": 4.7,
     "stock": 10,
     "description": "Stylish UV protection sunglasses perfect for summer outings.",
-    "image": "https://i.postimg.cc/8k0n8J7R/sunglasses.png",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
     "category": "Accessories"
   },
   {
@@ -18,7 +18,7 @@
     "rating": 4.5,
     "stock": 15,
     "description": "Lightweight straw hat to keep you cool and protected from the sun.",
-    "image": "https://i.postimg.cc/3x3QzSGq/hat.png",
+    "image": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c",
     "category": "Accessories"
   },
   {
@@ -29,7 +29,7 @@
     "rating": 4.6,
     "stock": 20,
     "description": "Breathable cotton t-shirt designed for hot weather comfort.",
-    "image": "https://i.postimg.cc/Z5p9Zp3S/tshirt.png",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
     "category": "Clothing"
   },
   {
@@ -40,7 +40,7 @@
     "rating": 4.8,
     "stock": 8,
     "description": "Elegant floral dress perfect for summer days and vacations.",
-    "image": "https://i.postimg.cc/FzvL0x3b/dress.png",
+    "image": "https://images.unsplash.com/photo-1521335629791-ce4aec67dd53",
     "category": "Clothing"
   },
   {
@@ -51,7 +51,7 @@
     "rating": 4.4,
     "stock": 25,
     "description": "Refreshing face mist to keep your skin hydrated in the heat.",
-    "image": "https://i.postimg.cc/qvXkGQhG/facemist.png",
+    "image": "https://images.unsplash.com/photo-1596755389378-c31d21fd1273",
     "category": "Skincare"
   },
   {
@@ -62,7 +62,7 @@
     "rating": 4.9,
     "stock": 18,
     "description": "High protection sunscreen to guard against harmful UV rays.",
-    "image": "https://i.postimg.cc/Y0y5c2vF/sunscreen.png",
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03",
     "category": "Skincare"
   }
 ]
