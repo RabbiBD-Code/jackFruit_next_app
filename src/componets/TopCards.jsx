@@ -10,10 +10,10 @@ const TopCards = async() => {
     const card = cards.slice(0,3)
 
     return (
-        <div className="mt-12">
+        <div className="mt-12 mx-auto">
       <h2 className="text-2xl font-bold mb-6">Popular Products</h2>
 
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-6 ">
         {
             card.map(item =><Top3Cards key={item.id} item={item}/> )
         }
