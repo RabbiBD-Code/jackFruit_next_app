@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import { BiStar } from 'react-icons/bi';
 import Top3Cards from './Top3Cards';
+import Category from './Category';
 
 const TopCards = async() => {
     const res = await fetch("https://jack-fruit-next-app.vercel.app/data.json")
@@ -12,7 +13,7 @@ const TopCards = async() => {
     return (
         <div className="mt-12 mx-auto">
       <h2 className="text-2xl font-bold mb-6">Popular Products</h2>
-
+      <Category/>
       <div className="grid md:grid-cols-3 gap-6 ">
         {
             card.map(item =><Top3Cards key={item.id} item={item}/> )

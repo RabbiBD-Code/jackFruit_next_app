@@ -5,7 +5,6 @@ import React from 'react';
 import { BsStarFill } from 'react-icons/bs';
 
 const Top3Cards = ({ item }) => {
-    console.log(item);
     return (
         <div className='border-2 rounded-xl'>
             <div className="relative w-full aspect-square">
