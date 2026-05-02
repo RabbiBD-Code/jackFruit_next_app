@@ -45,12 +45,12 @@ const Navbar = () => {
 
         <div className="flex gap-4">
           
-            {!user &&   <ul className="flex items-center  text-sm gap-5">
+            {!user &&   <ul className="flex items-center  text-sm gap-2">
               <li>
-                <Link href={"/signup"}>SignUp</Link>
+                <Link href={"/signup"}><Button variant='secondary'>SignUp</Button></Link>
               </li>
               <li>
-                <Link href={"/signin"}>SignIn</Link>
+                <Link href={"/signin"}><Button>SignIn</Button></Link>
               </li>
             </ul>}
 
