@@ -5,18 +5,25 @@ import React from 'react';
 import Navlink from './Navlink';
 import { authClient } from '@/lib/auth-client';
 import { Avatar, Button } from '@heroui/react';
+import { router } from 'better-auth/api';
 
 const Navbar = () => {
   const dataUser = authClient.useSession();
   const user = dataUser.data?.user;
 
-  const handleSignOut = async() =>{
-    await authClient.signOut()
-    
+  const handleSignOut = async () => {
+    await authClient.signOut({
+      fetchOptions: {
+        onSuccess: () => {
+          router.push("/login"); // redirect to login page
+        },
+      },
+    });
+
   }
 
-    return (
-        <div className="border-b px-2">
+  return (
+    <div className="border-b px-2">
       <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
         <div className="flex gap-2 items-center">
           <Image
@@ -37,22 +44,22 @@ const Navbar = () => {
           <li>
             <Navlink href={"/products"}>Products</Navlink>
           </li>
-          
+
           <li>
             <Navlink href={"/profile"}>My-Profile</Navlink>
           </li>
         </ul>
 
         <div className="flex gap-4">
-          
-            {!user &&   <ul className="flex items-center  text-sm gap-2">
-              <li>
-                <Link href={"/signup"}><Button variant='secondary'>SignUp</Button></Link>
-              </li>
-              <li>
-                <Link href={"/signin"}><Button>SignIn</Button></Link>
-              </li>
-            </ul>}
+
+          {!user && <ul className="flex items-center  text-sm gap-2">
+            <li>
+              <Link href={"/signup"}><Button variant='secondary'>SignUp</Button></Link>
+            </li>
+            <li>
+              <Link href={"/signin"}><Button>SignIn</Button></Link>
+            </li>
+          </ul>}
 
           {user && (
             <div className="flex gap-3">

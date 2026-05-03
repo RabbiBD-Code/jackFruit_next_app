@@ -11,11 +11,12 @@ import {
     Label,
     TextField,
 } from "@heroui/react";
-import { useRouter } from "next/navigation";
+import { router } from "better-auth/api";
+import { useRouter, useSearchParams } from "next/navigation";
 import { GrGoogle } from "react-icons/gr";
 
 export default function SignInPage() {
-
+    const searchParams = useSearchParams()
 
     const onSubmit = async (e) => {
         e.preventDefault();
@@ -30,6 +31,10 @@ export default function SignInPage() {
         })
 
         // console.log({ data, error })
+        const callbackURL = searchParams.get("callbackURL") || "/profile";
+        if(!error){
+            router.push(callbackURL)
+        }
 
     };
     const handleGoogleSingIn = async () => {
