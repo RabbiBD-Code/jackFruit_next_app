@@ -17,6 +17,8 @@ import { GrGoogle } from "react-icons/gr";
 export default function SignInPage() {
     const searchParams = useSearchParams()
     const router = useRouter();
+        const callbackUrl = searchParams.get("callbackURL") || "/profile";
+
 
     const onSubmit = async (e) => {
         e.preventDefault();
@@ -27,22 +29,21 @@ export default function SignInPage() {
         const { data, error } = await authClient.signIn.email({
             email,
             password,
-            callbackURL: searchParams.get("callbackURL") || "/profile"
+            callbackURL: callbackUrl,
         })
 
         // console.log({ data, error })
-        const callbackUrl = searchParams.get("callbackURL") || "/profile";
         if (!error) {
             router.push(callbackUrl)
         }
-        console.log(error);
 
     };
     const handleGoogleSingIn = async () => {
-        const data = await authClient.signIn.social({
+        await authClient.signIn.social({
             provider: "google",
+            callbackURL: callbackUrl,
         })
-    }
+    };
 
     return (
         <Card className="border mx-auto w-125 py-10 mt-5">
