@@ -32,16 +32,16 @@ export default function SignInPage() {
 
         // console.log({ data, error })
         const callbackURL = searchParams.get("callbackURL") || "/profile";
-        if(!error){
+        if (!error) {
             router.push(callbackURL)
         }
 
     };
     const handleGoogleSingIn = async () => {
-            await authClient.signIn.social({
-                provider: 'google'
-            })
-        }
+        const data = await authClient.signIn.social({
+            provider: "google",
+        })
+    }
 
     return (
         <Card className="border mx-auto w-125 py-10 mt-5">
