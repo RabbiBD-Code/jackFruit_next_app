@@ -27,7 +27,7 @@ const Top3Cards = ({ item }) => {
                 </div>
             </div>
 
-            <Link href={`/products/${item.id}`}>
+            <Link href={`/signin?callbackURL=/products/${item.id}`}>
                 <button className="mt-3 bg-blue-500 w-full text-white px-4 py-2 rounded-lg">
                     View Details
                 </button>

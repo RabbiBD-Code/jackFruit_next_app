@@ -5,21 +5,21 @@ import React from 'react';
 import Navlink from './Navlink';
 import { authClient } from '@/lib/auth-client';
 import { Avatar, Button } from '@heroui/react';
-import { router } from 'better-auth/api';
+import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
   const dataUser = authClient.useSession();
   const user = dataUser.data?.user;
+  const router = useRouter()
 
   const handleSignOut = async () => {
     await authClient.signOut({
-      fetchOptions: {
-        onSuccess: () => {
-          router.push("/login"); // redirect to login page
-        },
+    fetchOptions: {
+      onSuccess: () => {
+        router.push("/"); // redirect to login page
       },
-    });
-
+    },
+  });
   }
 
   return (
