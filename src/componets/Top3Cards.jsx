@@ -26,8 +26,8 @@ const Top3Cards = ({ item }) => {
                     <p className="font-bold text-xl">${item.price}</p>
                 </div>
             </div>
-
-            <Link href={`/signin?callbackURL=/products/${item.id}`}>
+{/* /signin?callbackURL= */}
+            <Link href={`/products/${item.id}`}>
                 <button className="mt-3 bg-blue-500 w-full text-white px-4 py-2 rounded-lg">
                     View Details
                 </button>

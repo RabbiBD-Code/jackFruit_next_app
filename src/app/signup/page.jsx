@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import {
@@ -26,6 +26,8 @@ export default function SignUpPage() {
     const email = e.target.email.value;
     const password = e.target.password.value;
 
+    console.log(name, email, password);
+
     const {data, error} = await authClient.signUp.email({
         name,
         email,
@@ -33,8 +35,10 @@ export default function SignUpPage() {
         image,
     })
     
-
-    // console.log({data, error})
+    if(data){
+      alert("already user sign in")
+    }
+    console.log({data, error})
 
     if(!error) {
         router.push('/')

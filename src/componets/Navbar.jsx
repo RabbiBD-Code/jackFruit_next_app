@@ -6,20 +6,15 @@ import Navlink from './Navlink';
 import { authClient } from '@/lib/auth-client';
 import { Avatar, Button } from '@heroui/react';
 import { useRouter } from 'next/navigation';
-
 const Navbar = () => {
+  const router = useRouter()
   const dataUser = authClient.useSession();
   const user = dataUser.data?.user;
-  const router = useRouter()
 
   const handleSignOut = async () => {
     await authClient.signOut({
-    fetchOptions: {
-      onSuccess: () => {
-        router.push("/"); // redirect to login page
-      },
-    },
   });
+  router.replace("/")
   }
 
   return (
