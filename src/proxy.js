@@ -19,5 +19,5 @@ if(!session){
 // export default function proxy(request) { ... }
  
 export const config = {
-  matcher: ["/profile", '/details/:path*'],
+  matcher: ["/profile", "/products/:path*"],
 }
