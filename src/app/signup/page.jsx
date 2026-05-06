@@ -35,10 +35,10 @@ export default function SignUpPage() {
         image,
     })
     
-    if(data){
-      alert("already user sign in")
-    }
-    console.log({data, error})
+    // if(data){
+    //   alert("already user sign in")
+    // }
+    // console.log({data, error})
 
     if(!error) {
         router.push('/')
